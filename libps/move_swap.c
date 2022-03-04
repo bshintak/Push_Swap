@@ -6,13 +6,13 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 16:17:05 by bshintak          #+#    #+#             */
-/*   Updated: 2022/02/22 16:49:24 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/02/28 14:42:08 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_sa(t_stack *stack)
+void	move_sa(t_stack *stack)
 {
 	int	tmp;
 
@@ -25,7 +25,7 @@ void	ft_sa(t_stack *stack)
 	}
 }
 
-void	ft_sb(t_stack *stack)
+void	move_sb(t_stack *stack)
 {
 	int	tmp;
 
@@ -38,12 +38,12 @@ void	ft_sb(t_stack *stack)
 	}
 }
 
-void	ft_ss(t_stack *stack)
+void	move_ss(t_stack *stack)
 {
 	if (stack->a && stack->b)
 	{
-		ft_sa(stack);
-		ft_sb(stack);
+		move_sa(stack);
+		move_sb(stack);
 		ft_printf("ss\n");
 	}
 }

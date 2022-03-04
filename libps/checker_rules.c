@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 02:09:29 by bshintak          #+#    #+#             */
-/*   Updated: 2022/02/25 10:43:59 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/02/28 15:41:59 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ int	checker_max_min(int argc, char **argv)
 	while (i < argc)
 	{
 		if (ft_atoi(argv[i]) < INT_MIN || ft_atoi(argv[i]) > INT_MAX)
-				return (FALSE);
+			return (FALSE);
 		i++;
 	}
 	return (TRUE);
@@ -69,9 +69,9 @@ int	checker_duplicate(int argc, char **argv)
 
 int	checker_sinal(int argc, char **argv)
 {
-	int i;
-	int j;
-	int h;
+	int	i;
+	int	j;
+	int	h;
 
 	i = 1;
 	j = 1;
@@ -85,7 +85,7 @@ int	checker_sinal(int argc, char **argv)
 				return (FALSE);
 		}
 		j++;
-		i++;	
+		i++;
 	}
 	return (TRUE);
 }

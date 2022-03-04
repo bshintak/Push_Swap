@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/11 01:13:28 by bshintak          #+#    #+#              #
-#    Updated: 2022/02/18 16:33:51 by bshintak         ###   ########.fr        #
+#    Updated: 2022/02/28 14:24:29 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,7 +33,7 @@ SRC_PATH = .
 
 OBJ_PATH = ./objects
 
-SRC_NAME =	main.c
+SRC_NAME =	main.c \
 
 SRC = $(addprefix $(SRC_PATH)/, $(SRC_NAME))
 OBJS = $(patsubst $(SRC_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRC))

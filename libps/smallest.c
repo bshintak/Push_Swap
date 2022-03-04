@@ -1,41 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_rotate.c                                      :+:      :+:    :+:   */
+/*   smallest.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/19 15:21:27 by bshintak          #+#    #+#             */
-/*   Updated: 2022/02/28 15:28:19 by bshintak         ###   ########.fr       */
+/*   Created: 2022/03/03 12:48:19 by bshintak          #+#    #+#             */
+/*   Updated: 2022/03/03 12:51:52 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	move_ra(t_stack *stack)
+int	smallest(t_list *stack)
 {
-	if (stack->a)
-	{
-		stack->a = stack->a->next;
-		ft_printf("ra\n");
-	}
-}
+	int	i;
+	int	smallest;
 
-void	move_rb(t_stack *stack)
-{
-	if (stack->b)
+	i = 0;
+	smallest = 0;
+	while (i < stack->prev)
 	{
-		stack->b = stack->b->next;
-		ft_printf("rb\n");
-	}
-}
-
-void	move_rr(t_stack *stack)
-{
-	if (stack->a && stack->b)
-	{
-		move_ra(stack);
-		move_rb(stack);
-		ft_printf("rr\n");
+		
 	}
 }
