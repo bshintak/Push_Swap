@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 18:35:59 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/03 12:37:07 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/03/07 17:34:39 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,10 @@ typedef struct s_stack
 	struct s_list	*b;
 }	t_stack;
 
+int		smallest_arg(t_list *stack);
+int		biggest_arg(t_list *stack);
+int		strlen_list(t_stack *stack);
+int		half_list(t_stack *stack);
 void	push_swap(int argc, char **argv);
 void	checker_args(int argc, t_stack *stack);
 int		checker_is_valid(int argc, char **argv);
