@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/04 15:35:27 by bshintak          #+#    #+#              #
-#    Updated: 2022/03/07 10:43:28 by bshintak         ###   ########.fr        #
+#    Updated: 2022/03/10 12:17:48 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ RM			= rm -f
 SRC_NAME	=	checker_rules.c		\
 				number_of_args.c	\
 				sort_args.c			\
+				sort_args_100.c		\
 				push_swap.c			\
 				move_swap.c			\
 				move_rotate.c		\

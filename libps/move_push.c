@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/25 10:47:22 by bshintak          #+#    #+#             */
-/*   Updated: 2022/02/28 12:41:57 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/03/09 16:26:53 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	move_pa(t_stack *stack)
 		return ;
 	ft_printf("pa\n");
 	tmp = stack->b;
-	if (stack->b != stack->b->next)
+	if (stack->b != stack->b->next && stack->b->next != 0)
 	{
 		stack->b->prev->next = stack->b->next;
 		stack->b->next->prev = stack->b->prev;
