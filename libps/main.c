@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 02:12:29 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/04 16:19:44 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/05/18 14:26:29 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 void	print_list(t_list *a)
 {
 	t_list	*tmp;
-	t_list	*i;
+	t_list	*aux;
 
 	if (!a)
 		return ;
 	tmp = a;
-	i = a->next;
+	aux = a->next;
 	ft_printf("%d\n", a->content);
-	while (i && i != tmp)
+	while (aux && aux != tmp)
 	{
-		ft_printf("%d\n", i->content);
-		i = (i->next);
+		ft_printf("%d\n", aux->content);
+		aux = aux->next;
 	}
 }
 
@@ -53,16 +53,6 @@ t_list	*add_node(t_list **s, int n)
 	return (*s);
 }
 
-/* (*s)->prev --- ultimo da lista
-	vou passar pro tmp
-	mem --- novo da lista
-	vou passar pro ultimo
-	mem->prev --- antigo ultimo
-	jogo o tmp para a penultima posição
-	para linkar as listas :
-	tmp->next --- novo ultimo (mem)
-	mem->next --- novo primeiro (*s) */
-
 int	main(int argc, char **argv)
 {
 	int	i;
@@ -72,7 +62,7 @@ int	main(int argc, char **argv)
 		return (FALSE);
 	if (checker_is_valid(argc, argv) == FALSE)
 	{
-		write (2, "Error\n", 6);
+		ft_printf("Error\n");
 		return (FALSE);
 	}
 	if (checker_is_valid(argc, argv) == TRUE)

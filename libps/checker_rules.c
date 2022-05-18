@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 02:09:29 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/09 12:01:08 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/04/20 16:36:37 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	checker_number(int argc, char **argv)
 		while (argv[i][j])
 		{
 			if ((argv[i][j] < '0' || argv[i][j] > '9') && (argv[i][j] != '-'))
-				return (FALSE); 
+				return (FALSE);
 			j++;
 		}
 		i++;

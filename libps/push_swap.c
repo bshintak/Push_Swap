@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 18:49:13 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/10 12:29:27 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/05/18 14:31:59 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,11 @@ void	push_swap(int argc, char **argv)
 		stacks.b = add_node(&stacks.b, ft_atoi(argv[i]));
 		i++;
 	}
-	checker_args(argc, &stacks);
-	// ft_printf("stack_a\n");
-	// print_list(stacks.a);
-	// ft_printf("stack_b\n");
-	// print_list(stacks.b);
+	num_args(argc, &stacks);
+	free(stacks.a);
+	free(stacks.b);
 }
+/*ft_printf("stack_a\n");
+print_list(stacks.a);
+ft_printf("stack_b\n");
+print_list(stacks.b);*/

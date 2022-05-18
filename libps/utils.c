@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 12:48:19 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/10 14:12:42 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/05/17 18:10:12 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	smallest_arg(t_list *stack)
 	t_list	*smallest;
 	t_list	*tmp;
 	int		i;
-	
+
 	i = 0;
 	smallest = stack;
 	tmp = stack->next;
@@ -41,7 +41,7 @@ int	biggest_arg(t_list *stack)
 	t_list	*biggest;
 	t_list	*tmp;
 	int		i;
-	
+
 	i = 0;
 	biggest = stack;
 	tmp = stack->next;
@@ -60,15 +60,32 @@ int	biggest_arg(t_list *stack)
 	return (i);
 }
 
-int	strlen_list(t_stack *stack)
+int	strlen_list_a(t_stack *stack)
+{
+	int		i;
+	t_list	*aux;
+
+	i = 0;
+	if (!stack || !stack->a)
+		return (0);
+	aux = stack->a;
+	while (aux != stack->a->prev)
+	{
+		aux = aux->next;
+		i++;
+	}
+	return (i + 1);
+}
+
+int	strlen_list_b(t_stack *stack)
 {
 	int		i;
 	int		tmp;
 	t_list	*aux;
 
 	i = 0;
-	tmp = stack->a->content;
-	aux = stack->a;
+	tmp = stack->b->content;
+	aux = stack->b;
 	if (!stack)
 		return (0);
 	while (aux->next->content != tmp)
@@ -83,7 +100,7 @@ int	check_b_sort(t_stack *stack)
 {
 	t_list	*aux;
 	int		tmp;
-	
+
 	tmp = stack->b->content;
 	aux = stack->b;
 	if (!stack)

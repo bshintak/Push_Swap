@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 18:23:37 by bshintak          #+#    #+#             */
-/*   Updated: 2022/03/10 10:22:58 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/04/20 19:51:36 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	with_2_args(t_stack *stack)
 {
-	if (stack->a->content < stack->a->next->content)
-		return ;
 	if (stack->a->content > stack->a->next->content)
 		move_sa(stack);
 }
@@ -84,12 +82,13 @@ void	second_smallest(t_stack *stack)
 	}
 	move_pb(stack);
 }
+
 void	with_4_or_5_args(t_stack *stack)
 {
-	if (strlen_list(stack) > 3)
+	if (strlen_list_a(stack) > 4)
 		first_smallest(stack);
 	second_smallest(stack);
 	with_3_args(stack);
 	move_pa(stack);
- 	move_pa(stack);
+	move_pa(stack);
 }
