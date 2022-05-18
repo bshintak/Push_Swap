@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/03 12:48:19 by bshintak          #+#    #+#             */
-/*   Updated: 2022/05/17 18:10:12 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/05/18 15:27:15 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,20 +96,18 @@ int	strlen_list_b(t_stack *stack)
 	return (i);
 }
 
-int	check_b_sort(t_stack *stack)
+int	is_sorted(t_stack *stack)
 {
+	t_list	*tmp;
 	t_list	*aux;
-	int		tmp;
 
-	tmp = stack->b->content;
-	aux = stack->b;
-	if (!stack)
-		return (0);
-	while (aux->next->content != tmp)
+	tmp = stack->a;
+	aux = stack->a->prev->next;
+	while (tmp->next != aux)
 	{
-		if (aux->next->content > aux->content)
-			return (TRUE);
-		aux = aux->next;
+		if (tmp->content > tmp->next->content)
+			return (0);
+		tmp = tmp->next;
 	}
-	return (FALSE);
+	return (1);
 }
