@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/04 15:35:27 by bshintak          #+#    #+#              #
-#    Updated: 2022/03/10 12:17:48 by bshintak         ###   ########.fr        #
+#    Updated: 2022/05/18 15:27:30 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,17 +25,21 @@ RM			= rm -f
 
 # FILES
 
-SRC_NAME	=	checker_rules.c		\
-				number_of_args.c	\
-				sort_args.c			\
-				sort_args_100.c		\
-				push_swap.c			\
-				move_swap.c			\
-				move_rotate.c		\
-				move_rev_rotate.c	\
-				move_push.c			\
-				utils.c				\
-				main.c
+SRC_NAME	=	checker_rules.c			\
+				move_swap.c				\
+				move_rotate.c			\
+				move_rev_rotate.c		\
+				move_push.c				\
+				number_of_args.c		\
+				sort_args.c				\
+				utils.c					\
+				push_swap.c				\
+				main.c					\
+				chunks.c				\
+				make_array_sorted.c		\
+				sort_big_args.c			\
+				push_to_b.c				\
+				push_to_a.c
 
 SRCS		= $(addprefix $(SRC_PATH)/, $(SRC_NAME))
 OBJS		= $(patsubst $(SRC_PATH)/%.c, $(OBJ_PATH)/%.o, $(SRCS))
