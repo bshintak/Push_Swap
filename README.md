@@ -5,3 +5,5 @@
  [![Stars](https://img.shields.io/github/stars/bshintak/Push_Swap?color=ffff00&label=Stars&logo=Stars&style=?style=flat)](https://github.com/bshintak/Push_Swap)
  [![Size](https://img.shields.io/github/repo-size/bshintak/Push_Swap?color=blue&label=Size&logo=Size&style=?style=flat)](https://github.com/bshintak/Push_Swap)
  [![Activity](https://img.shields.io/github/last-commit/bshintak/Push_Swap?color=red&label=Last%20Commit&style=flat)](https://github.com/bshintak/Push_Swap)
+ 
+ The instructions were given in the [subject](https://github.com/bshintak/Push_Swap/blob/master/subject_push_swap.pdf).
