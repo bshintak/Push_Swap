@@ -9,3 +9,7 @@
  Push_swap is a School 42 project. The purpose of this project is to create sorting algorithm.
  
  The instructions were given in the [subject](https://github.com/bshintak/Push_Swap/blob/master/subject_push_swap.pdf).
+ 
+ <p align="center">
+  <img src=https://raw.githubusercontent.com/bshintak/Push_Swap/main/push_swap.png />
+</p>
