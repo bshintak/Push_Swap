@@ -10,6 +10,6 @@
  
  The instructions were given in the [subject](https://github.com/bshintak/Push_Swap/blob/master/subject_push_swap.pdf).
  
- <p align="center">
+ <p align="left">
   <img src=https://raw.githubusercontent.com/bshintak/Push_Swap/main/push_swap.png />
 </p>
