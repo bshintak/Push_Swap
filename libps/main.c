@@ -6,7 +6,7 @@
 /*   By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/11 02:12:29 by bshintak          #+#    #+#             */
-/*   Updated: 2022/05/18 14:26:29 by bshintak         ###   ########.fr       */
+/*   Updated: 2022/10/17 17:31:05 by bshintak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,9 +55,6 @@ t_list	*add_node(t_list **s, int n)
 
 int	main(int argc, char **argv)
 {
-	int	i;
-
-	i = 0;
 	if (argc < 3)
 		return (FALSE);
 	if (checker_is_valid(argc, argv) == FALSE)
