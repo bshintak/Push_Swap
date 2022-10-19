@@ -6,7 +6,7 @@
 #    By: bshintak <bshintak@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/04 15:35:27 by bshintak          #+#    #+#              #
-#    Updated: 2022/05/18 15:27:30 by bshintak         ###   ########.fr        #
+#    Updated: 2022/10/17 17:38:42 by bshintak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ $(OBJ_PATH)/%.o : $(SRC_PATH)/%.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(NAME): $(DEPS) $(OBJ_PATH) $(OBJS)
-	$(CC) $(CFLAGS) $(DEPS) $(OBJS) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJS) $(DEPS) -o $(NAME)
 	echo "\x1b[36m[PUSH_SWAP COMPILED]\x1b[0m"	
 
 # Libraries
